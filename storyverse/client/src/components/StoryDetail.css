@@ -1,0 +1,396 @@
+.story-detail-page {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.story-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.story-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.story-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.story-subtitle {
+  color: #666;
+}
+
+.story-content {
+  padding: 1.5rem;
+}
+
+.story-parts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.story-part {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.author-name {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.story-date, .contribution-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.story-body {
+  margin-bottom: 1rem;
+}
+
+.story-paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.story-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.like-button, .edit-button, .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.like-button:hover, .edit-button:hover, .delete-button:hover {
+  background-color: #e0e0e0;
+}
+
+.like-button.liked {
+  color: #e74c3c;
+}
+
+.contribute-form {
+  margin-top: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.contribute-form h3 {
+  margin-bottom: 1rem;
+}
+
+.contribute-form textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.submit-contribution {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submit-contribution:hover {
+  background-color: #2980b9;
+}
+
+.notification {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.notification.success {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.notification.error {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.delete-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-confirm-dialog {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.delete-confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Add more styles as needed */
+
+.story-detail {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.story-detail h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.story-detail p {
+  margin-bottom: 20px;
+}
+
+.story-detail button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.story-detail textarea {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+
+.story-detail .contribution {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.story-card, .contribution-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 16px;
+}
+
+.story-header, .contribution-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.story-info, .contribution-info {
+  flex-grow: 1;
+}
+
+.story-info h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.story-info p, .contribution-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #65676B;
+}
+
+.story-content, .contribution-content {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.story-actions, .contribution-actions {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #E4E6EB;
+  padding-top: 12px;
+}
+
+.action-button {
+  background-color: transparent;
+  border: none;
+  color: #65676B;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.action-button:hover {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.action-button.liked {
+  color: #1877F2;
+}
+
+.contributions-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.contribute-form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.contribute-input {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #CED0D4;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.submit-contribution {
+  background-color: #1877F2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-contribution:hover {
+  background-color: #166FE5;
+}
+
+.edit-content {
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid #CED0D4;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  resize: vertical;
+}

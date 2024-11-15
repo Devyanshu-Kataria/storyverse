@@ -1,0 +1,192 @@
+.admin-container {
+
+  max-width: 1200px;
+
+  margin: 2rem auto;
+
+  padding: 1rem;
+
+  background-color: #f3f4f6; /* Light gray background for contrast */
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+.admin-container h1 {
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+  color: #111827; /* Dark text for readability */
+
+}
+
+
+
+.admin-container section {
+
+  margin-bottom: 3rem;
+
+}
+
+
+
+.admin-container table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  overflow-x: auto;
+
+}
+
+
+
+.admin-container th,
+
+.admin-container td {
+
+  border: 1px solid #e5e7eb; /* Soft borders */
+
+  padding: 0.75rem;
+
+  text-align: left;
+
+}
+
+
+
+.admin-container th {
+
+  background-color: #d1d5db; /* Subtle header background */
+
+  color: #1f2937; /* Dark header text */
+
+}
+
+
+
+.admin-container button {
+
+  margin-right: 0.5rem;
+
+  padding: 0.4rem 0.8rem;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-size: 0.9rem;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+
+
+.admin-container button:hover {
+
+  opacity: 0.9;
+
+  transform: translateY(-1px);
+
+}
+
+
+
+.admin-container .btn-success {
+
+  background-color: #10b981; /* Tailwind's emerald-500 */
+
+  color: white;
+
+}
+
+
+
+.admin-container .btn-warning {
+
+  background-color: #f59e0b; /* Tailwind's amber-500 */
+
+  color: white;
+
+}
+
+
+
+.admin-container .btn-danger {
+
+  background-color: #ef4444; /* Tailwind's red-500 */
+
+  color: white;
+
+}
+
+
+
+.admin-container .btn-info {
+
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+
+  color: white;
+
+}
+
+
+
+.error {
+
+  color: #dc2626; /* Tailwind's red-600 */
+
+  font-weight: bold;
+
+  text-align: center;
+
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+  .admin-container table,
+
+  .admin-container th,
+
+  .admin-container td {
+
+    display: block;
+
+  }
+
+
+
+  .admin-container th,
+
+  .admin-container td {
+
+    padding: 0.5rem;
+
+  }
+
+
+
+  .admin-container button {
+
+    margin-bottom: 0.5rem;
+
+  }
+
+}
+
+
+

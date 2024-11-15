@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+nav {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.story {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input[type='text'], textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
